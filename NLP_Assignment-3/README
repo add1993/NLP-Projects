@@ -1,0 +1,4 @@
+Created the following global variables after taking permission from professor:
+rare_words = set()
+tag_dict = {}
+feature_dict = {}
