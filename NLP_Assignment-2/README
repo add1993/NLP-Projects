@@ -1,0 +1,17 @@
+For part 4 and 6,
+the following new functions have been created in order to separate it from mixing with the previous definitions of the functions.
+
+The functions for part 4 are as follows : 
+get_features_dal (preprocessed_snippet, dal)
+The function calls the get_features(preprocessed_snippet) function to return the numpy array. It then further calls the score_snippet (preprocessed_snippet, dal) function to return the scores.
+score_snippet() function is specifically to handle the part 4 case.
+
+For part 6 case, I have created score_snippet_modified as the new function. The detailed explanation is below
+
+The functions for part 6 are the same as part 4
+get_features_dal(preprocessed_snippet, dal) calls get_features(preprocessed_snippet) function to return the numpy array and then further we call the score_snippet_modified(preprocessed_snippet, dal) function. The score_snippet_modified() function will handle the case of looking into the synonym and antonym of the word if not present in dal dictionary.
+
+Therefore, in order to prevent confusion. I have created separate methods to part 4 and 6 for easy testing.
+
+By default the code runs the score_snippet_modified() code which is the code for part 6.
+
